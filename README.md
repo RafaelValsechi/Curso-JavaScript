@@ -1,13 +1,10 @@
 # Curso-JavaScript
 Estudos de JavaScript
-
 # Comandos
 **window.alert()** // Mostra a mensagem no topo do navegador
 **window.prompt()** // Faz uma pergunta no topo do navegdor
 **window.confirm()** // Campo de confirmação Sim ou Não (Booleano)
 **document.write()** // Exibe o texto no corpo da página
-
-
 # Operadores
 **Aritiméticos** //  + Soma
                  - Subtração
@@ -26,6 +23,18 @@ Estudos de JavaScript
 **Incremento**  // n++ ou ++n // Acrecenta mais 1 a variável (n+1)
                 // n-- ou --n // Subtrai 1 número a variável
 
+**Relacionais** // Sempre uma resposta booleana 
+                   > Maior (5 > 2 - True)
+                   < Menor (7 < 4 - False)
+                   >= Maior ou igual (8 >= 8 - True)
+                   <= Menor ou igual (9 <= 7 - False)
+                   == Igual (5 == 5 - True)
+                   != Diferente (4 != 4 - False)
+                   === Operador de identidade restrito - Operadores idênticos, com o mesmo valor, número e tipo. (5 === '5' - False / 5 === 5 - True)
+**Lógicos** // ! Negação
+               && Conjunção (e lógico)
+               || Disjunção (ou lógico)
+
 **Typeof** // Exibe de qual tipo primitivo a variável é
 
 # Precedência dos operadores aritiméticos (Ordem de importância)
@@ -34,6 +43,13 @@ Estudos de JavaScript
 * / %// Terceiro multiplicação, divisão real e divisão inteira
 + - // Quarto soma e subtração
 
+# Precedência dos operadores relacionais
+O que aparecer primeiro, leitura da esquerda para a direita
+
+# Precedência dos operadores lógicos
+! // Primeiro o NÃO
+&& // Segundo o E
+|| // Terceiro o OU
 # Converter String para Números inteiros e reais
 (number + number) para adição - parseInt (inteiros) - parseFloat (reais)
 (string + string) para concatenação
