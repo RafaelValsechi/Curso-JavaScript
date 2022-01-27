@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo JS</title>
+    <style>
+        body {
+            background-color: rgb(174, 102, 241);
+            color: white;
+            font: 500 16px 'Lato';
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resutado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <!--<div name="msg">Clique em mim</div>-->
+    <!--<div class="msg">Clique em mim</div>-->
+    
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0] // Seleciona a tag  - o número entre colchetes representa a posição da tag no código. Serve para várias tags iguais.
+        window.document.write('Está escrito: ' + p1.innerText) // Repete o que está escrito em um parágrafo após um texto
+        corpo.style.background = 'black' // Mudança de cor do BG
+        p1.style.color = 'yellow' // Mundança de cor do parágrafo
+
+        document.write(p1.innerHTML) // Mostra o parágrafo com todas as formatações e tags
+        //window.alert('Está escrito: ' + p1.innerText) // Mostra o parágrafo sem as formatações
+
+        /*
+        var d = document.getElementById('msg')
+        d.style.backgroundColor = 'Pink'
+        d.innerText = 'Aguardando... '
+        */
+
+        /*
+        var d = document.getElementsByName('msg')[0]
+        d.innerText = 'Tô chegando... '
+        */
+
+        /*
+        var d = document.getElementsByClassName('msg')[0]
+        d.innerText = 'Tô chegando... '
+        */
+
+        var d = document.querySelector('div#msg') //Para utilizar com class é só trocar o # pelo .
+        d.style.color = 'blue'
+
+    </script>
+</body>
+</html>

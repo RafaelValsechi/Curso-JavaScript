@@ -80,3 +80,12 @@ Se utiliza de ${} para chamar uma variável
  n1.toFixed(2) -- Mostra a quantidade de casas após a vírgula eu quero. A quantidade vai dentro do parenteses.
  n1.toFixed(2).replace('.',',') --Mostra a quantidade de casas após a vírgula e substitui o ponto por vírgula na exibição.
  n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}) -- Fazer a exibição dos valores com o valor monetário do país determinado. (Nesse caso R$)
+
+ # DOM
+ Seleções
+
+**Marca** -- getElementsByTagName() -- Seleciona os itens pelo nome. Ex.: <p>, <h1>
+**ID** -- getElementsById() -- Seleciona os itens pelo ID. Ex.: #texto #selector #result
+**Nome** -- getElementsByName -- Seleciona os itens pelo nome. Ex.:
+**Classe** -- getElementsByClassName () -- Seleciona os itens pela classe. Ex.:
+**Seletor** -- querySelector() ou querySelectorAll() -- Seleção mais moderna. querySelector('div#msg')
