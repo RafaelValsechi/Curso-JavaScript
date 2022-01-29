@@ -7,11 +7,16 @@
     <title>Quantos dias para o Natal?</title>
 </head>
 <body>
+    <h1>É Natal?</h1>
+    <input type="date" name="dia" id="dia">
+    <div id="res">Res</div>
+
     <script>
-        var diaHoje = Number(window.prompt ('Que dia é hoje? (ex. 22)'))
-        var mesHoje = Number(window.prompt ('Qual o mês? (ex. 05)'))
-        var natal = diaHoje + mesHoje    
-        natal == 37 ? document.write ('É natal') : document.write ('Ainda não é natal')
+        var diaHoje = document.querySelector('input#dia')
+        var data = ('diaHoje')
+        var sim = 'É Natal!'
+        var nao = 'Não é Natal!'
+        res.innerHTML = `O dia ${res} ? ${sim} : ${nao} Natal`
 
     </script>
 </body>
