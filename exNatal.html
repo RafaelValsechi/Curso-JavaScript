@@ -8,15 +8,23 @@
 </head>
 <body>
     <h1>É Natal?</h1>
-    <input type="date" name="dia" id="dia">
     <div id="res">Res</div>
 
     <script>
-        var diaHoje = document.querySelector('input#dia')
-        var data = ('diaHoje')
-        var sim = 'É Natal!'
-        var nao = 'Não é Natal!'
-        res.innerHTML = `O dia ${res} ? ${sim} : ${nao} Natal`
+        var agora = new Date()
+        var diaHoje = agora.getDate()
+        var mesHoje = agora.getUTCMonth()
+        var diaVesp = 24
+        var diaNatal = 25
+        var mesNatal = 12
+            
+        if (agora == diaVesp && agora == mesNatal ) {
+            res.innerHTML = 'É vépera de Natal'
+        } else if (agora == diaNatal && agora == mesNatal) {
+            res.innerHTML = "É Natal! Feliz Natal! Ho Ho Ho"
+        } else {
+            res.innerHTML = "Ainda não é Natal! Sossega!"
+        }
 
     </script>
 </body>
